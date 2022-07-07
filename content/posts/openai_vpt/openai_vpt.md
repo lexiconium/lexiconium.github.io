@@ -31,7 +31,7 @@ draft: true
 
 
 
-![vpt overview](https://cdn.openai.com/vpt/overview.svg)
+![overview](overview.svg)
 
 Fig. 1. VPT method overview [1]
 
