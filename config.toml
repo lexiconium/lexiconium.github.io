@@ -1,0 +1,4 @@
+baseURL = "https://lexiconium.github.io/"
+title = "What Did I Say?"
+paginate = 5
+theme = "PaperMod"
