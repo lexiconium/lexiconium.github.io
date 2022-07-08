@@ -1,4 +1,4 @@
-baseURL: "https://lexiconium.github.io/posts"
+baseURL: "https://lexiconium.github.io/posts/"
 title: "What Did I Say?"
 paginate: 5
 theme: "PaperMod"
