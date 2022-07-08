@@ -3,13 +3,13 @@ title: "What Did I Say?"
 paginate: 5
 theme: "PaperMod"
 
-enableInlineShortcodes: true
+# enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
 enableEmoji: true
-pygmentsUseClasses: true
+# pygmentsUseClasses: true
 
 minify:
   disableXML: true
