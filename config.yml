@@ -1,9 +1,9 @@
-baseURL: "https://lexiconium.github.io/"
+baseURL: "https://lexiconium.github.io/posts/"
 title: "What Did I Say?"
 paginate: 5
 theme: "PaperMod"
 
-enableRobotsTXT: true
+enableRobotsTXT: false
 buildDrafts: false
 buildFuture: false
 buildExpired: false
