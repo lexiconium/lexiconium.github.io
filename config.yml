@@ -1,4 +1,4 @@
-baseURL: "https://lexiconium.github.io/"
+baseURL: "https://lexiconium.github.io/posts/"
 title: "What Did I Say?"
 paginate: 5
 theme: "PaperMod"
@@ -15,7 +15,7 @@ minify:
   disableXML: true
   minifyOutput: true
 
-menu:
+# menu:
   # main:
   #   - name: Archive
   #     url: archives
