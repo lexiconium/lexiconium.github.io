@@ -1,31 +1,28 @@
-baseURL: "https://lexiconium.github.io/posts/"
+baseURL: "https://lexiconium.github.io/posts"
 title: "What Did I Say?"
 paginate: 5
 theme: "PaperMod"
 
-# enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
-enableEmoji: true
-# pygmentsUseClasses: true
 
 minify:
   disableXML: true
   minifyOutput: true
 
 # menu:
-  # main:
-  #   - name: Archive
-  #     url: archives
-  #     weight: 5
-  #   - name: Search
-  #     url: search
-  #     weight: 10
-  #   - name: Tags
-  #     url: tags
-  #     weight: 10
+#   main:
+#     - name: Archive
+#       url: archives
+#       weight: 5
+#     - name: Search
+#       url: search
+#       weight: 10
+#     - name: Tags
+#       url: tags
+#       weight: 10
 
 params:
   env: production
