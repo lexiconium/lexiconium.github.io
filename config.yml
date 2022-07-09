@@ -53,8 +53,7 @@ params:
 
     homeInfoParams:
         Title: "I Said..."
-        Content: >
-            뭐라고 했었는지 기억하는 공간.
+        Content: 뭐라고 했었는지 기억하는 공간.
 
     socialIcons:
         - name: github
