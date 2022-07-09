@@ -10,7 +10,7 @@ comments: true
 hidemeta: false
 ShowReadingTime: true
 ShowBreadCrumbs: false
-ShowPostNavLinks: false
+ShowPostNavLinks: true
 ShowWordCount: false
 ShowRssButtonInSectionTermList: true
 
@@ -18,9 +18,11 @@ disableHLJS: false
 disableShare: false
 searchHidden: false
 
-UseHugoToc: true
-showToc: false
+UseHugoToc: false
+showToc: true
 TocOpen: false
+
+math: false
 
 draft: true
 ---

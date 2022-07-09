@@ -5,11 +5,12 @@ theme: "PaperMod"
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
+enableEmoji: true
+pygmentsUseClasses: true
+
 buildDrafts: false
 buildFuture: false
 buildExpired: false
-enableEmoji: true
-pygmentsUseClasses: true
 
 minify:
     disableXML: true
@@ -49,7 +50,7 @@ params:
     hideSummary: false
     UseHugoToc: false
     showtoc: true
-    tocopen: true
+    tocopen: false
 
     homeInfoParams:
         Title: "I Said..."
