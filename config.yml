@@ -3,58 +3,67 @@ title: "What Did I Say?"
 paginate: 5
 theme: "PaperMod"
 
-enableRobotsTXT: false
+enableInlineShortcodes: true
+enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
 
 minify:
-  disableXML: true
-  minifyOutput: true
+    disableXML: true
+    minifyOutput: true
 
-# menu:
-#   main:
-#     - name: Archive
-#       url: archives
-#       weight: 5
-#     - name: Search
-#       url: search
-#       weight: 10
-#     - name: Tags
-#       url: tags
-#       weight: 10
+menu:
+    main:
+        - name: Archive
+          url: archives
+          weight: 5
+        - name: Search
+          url: search
+          weight: 10
+        - name: Tags
+          url: tags
+          weight: 10
 
 params:
-  env: production
-  title: "What Did I Say?"
-  author: "Minsoo Kim"
-  DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
-  disableThemeToggle: false
+    env: production
+    title: "What Did I Say?"
+    author: "Minsoo Kim"
+    DateFormat: "January 2, 2006"
+    defaultTheme: auto # dark, light
+    disableThemeToggle: false
 
-  ShowReadingTime: true
-  ShowShareButtons: true
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: false
-  ShowCodeCopyButtons: false
-  ShowWordCount: false
-  ShowRssButtonInSectionTermList: true
-  disableSpecial1stPost: false
-  disableScrollToTop: false
-  comments: true
-  hidemeta: false
-  hideSummary: false
-  UseHugoToc: false
-  showtoc: true
-  tocopen: true
+    ShowReadingTime: true
+    ShowShareButtons: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: false
+    ShowCodeCopyButtons: false
+    ShowWordCount: false
+    ShowRssButtonInSectionTermList: true
+    disableSpecial1stPost: false
+    disableScrollToTop: false
+    comments: true
+    hidemeta: false
+    hideSummary: false
+    UseHugoToc: false
+    showtoc: true
+    tocopen: true
 
-  homeInfoParams:
-    Title: "I Said..."
-    Content: >
-        뭐라고 했었는지 기억하는 공간.
+    homeInfoParams:
+        Title: "I Said..."
+        Content: >
+            뭐라고 했었는지 기억하는 공간.
 
-  socialIcons:
-    - name: github
-      url: "https://github.com/lexiconium"
-    - name: email
-      url: "mailto:min-soo.kim@outlook.kr"
+    socialIcons:
+        - name: github
+          url: "https://github.com/lexiconium"
+        - name: email
+          url: "mailto:min-soo.kim@outlook.kr"
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
