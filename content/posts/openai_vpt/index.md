@@ -33,7 +33,7 @@ draft: false
 
 
 
-![overview](overview.svg)
+![overview](./images/overview.svg)
 
 Fig. 1. VPT method overview [1]
 
@@ -51,7 +51,7 @@ IDM은 대략 5 억 개의 학습가능한 가중치를 가진 모델로 128 개
 
 
 
-![idm effect of 3d conv](idm_effect_of_3d_conv.png)
+![idm effect of 3d conv](./images/idm_effect_of_3d_conv.png)
 
 Fig. 2. IDM이 temporal convolution layer를 포함했을 때와 포함하지 않았을 때의 loss 및 성능 비교 [2]
 
@@ -67,7 +67,7 @@ Fig. 2. IDM이 temporal convolution layer를 포함했을 때와 포함하지 �
 
 ### Performance
 
-![idm performance](idm_performance.png)
+![idm performance](./images/idm_performance.png)
 
 Fig. 3. 좌측은 IDM의 키 입력 및 마우스 위치의 정확도를 contractor dataset size에 대해 나타냈고 우측은 IDM과 BC를 마찬가지로 dataset size에 대해 비교한 것이다. [2]
 
@@ -99,7 +99,7 @@ $$
 $$
 
 
-![vpt training and zero shot performance](vpt_training_and_zero-shot_performance.png)
+![vpt training and zero shot performance](./images/vpt_training_and_zero-shot_performance.png)
 
 Fig. 4. 좌측은 IDM에 의해 pseudo labeling된 dataset에 대한 train 및 valid loss 그리고 GT인 contractor data에 대한 loss를 training epoch에 따라 나타낸 것이다. 우측은 각 아이템이 에피소드 당 몇 개 수집됐는지 2500 개 이상의 60 분 survival 에피소드를 평균내서 training epoch에 따라 나타낸 것이다. [2]
 
@@ -109,7 +109,7 @@ Fig. 4. 좌측은 IDM에 의해 pseudo labeling된 dataset에 대한 train 및 v
 
 
 
-![vpt size comparison](vpt_size_comparison.png)
+![vpt size comparison](./images/vpt_size_comparison.png)
 
 Fig. 5. Dataset과 모델 크기에 따른 loss 그리고 zero-shot 성능 [2]
 
@@ -119,7 +119,7 @@ Fig. 5. Dataset과 모델 크기에 따른 loss 그리고 zero-shot 성능 [2]
 
 
 
-![vpt size comparison fine-tuned to contractor house](vpt_size_comparison_fine-tuned_to_contractor_house.png)
+![vpt size comparison fine-tuned to contractor house](./images/vpt_size_comparison_fine-tuned_to_contractor_house.png)
 
 Fig. 6. Foundation 모델을 contractor_house dataset에 fine-tune함에 따른 loss 변화 [2]
 
@@ -141,7 +141,7 @@ VPT 학습에 대한 보다 자세한 정보는 [논문](https://arxiv.org/abs/2
 
 #### Behavioral Cloning (BC)
 
-![vpt fine-tuning with bc](vpt_fine-tuning_with_bc.png)
+![vpt fine-tuning with bc](./images/vpt_fine-tuning_with_bc.png)
 
 Fig. 7. 좌측은 foundation 모델의 zero-shot 성능 그리고 이를 earlygame_keyword 및 contractor_house dataset에 BC fine-tuning한 성능을 나타낸다. fine-tuning 후 foundation 모델은 하지 못했던 wooden, stone tools 제작이 가능해진 것을 볼 수 있다. 우측은 BC fine-tuning에 foundation 모델의 training 정도가 미치는 영향을 epoch에 대해 나타낸 것이다. [2]
 
@@ -153,7 +153,7 @@ Foundation 모델을 contractor_house dataset에 BC fine-tuning한 뒤 wooden to
 
 
 
-![vpt idm effect on fine-tuning with bc](vpt_idm_effect_on_fine-tuning_with_bc.png)
+![vpt idm effect on fine-tuning with bc](./images/vpt_idm_effect_on_fine-tuning_with_bc.png)
 
 Fig. 8. IDM 품질의 영향은 IDM trainig data의 크기가 100 시간을 넘긴 이후론 크지 않다는 것을 볼 수 있다. [2]
 
@@ -163,13 +163,13 @@ Fig. 8. IDM 품질의 영향은 IDM trainig data의 크기가 100 시간을 넘�
 
 RL fine-tuning의 경우 학습에 앞서 reward shaping이 수행됐다. 자세한 정보는 [논문](https://arxiv.org/abs/2206.11795)의 Appendix G에서 볼 수 있다.
 
-![vpt fine-tuning with rl](vpt_fine-tuning_with_rl.png)
+![vpt fine-tuning with rl](./images/vpt_fine-tuning_with_rl.png)
 
 Fig. 9. (a) Episode에 따른 reward. 모델이 random initialize된 경우 그 어떤 reward도 얻지 못함을 볼 수 있다. (b) 모델이 random initialize된 경우 그 어떤 요소도 수집하거나 제작하지 못한다. (c) Foundation 모델을 RL fine-tuning한 경우. (d) Foundation 모델을 위의 earlygame_keyword에 fine-tuning한 뒤 RL fine-tuning한 경우 (c)에서 습득하거나 제작하지 못했던 나머지 것들을 수집 및 제작할 수 있게 됐다. [2]
 
 
 
-![diamond pickaxe sequence](diamond-pickaxe-sequence.svg)
+![diamond pickaxe sequence](./images/diamond-pickaxe-sequence.svg)
 
 Fig. 10. Diamond pickaxe 제작 과정 [1]
 
@@ -181,7 +181,7 @@ Foundation 모델 \\(\rightarrow\\) Early-Game 모델 \\(\rightarrow\\) RL fine-
 
 ## Data Scaling Properties
 
-![vpt data scaling properties](vpt_data_scaling_properties.png)
+![vpt data scaling properties](./images/vpt_data_scaling_properties.png)
 
 Fig. 11. Foundation 모델의 zero-shot 성능은 어느순간 정체되는 것을 볼 수 있는 반면 fine-tuning하는 경우 training data의 크기가 증가함에 따라 그 성능 또한 향상되는 것을 볼 수 있다. [2]
 
@@ -197,7 +197,7 @@ Fig. 11. Foundation 모델의 zero-shot 성능은 어느순간 정체되는 것�
 
 ## 여담
 
-매우 생소한 방법론을 제시했다거나 한 연구는 아니었지만, 그 뛰어난 인력과 자본력을 동원해 일반적으로 확인하기 어려운 영역을 탐구하고, 놀랄만한 결과를 냈다는 점에서 역시 OpenAI다 하며 읽었다. 다만 읽는 내내 이들이 conclusion에서 말했듯 모델에 목표를 설정할 수 있다면 좋을텐데라는 생각을 했는데, 향후 연구에서 어떻게 목표를 설정할지 그리고 설정했을 시 어느정도 정확도로 이를 달성할 수 있을지 등 향후 연구가 기다려지는 논문이었다.
+매우 생소한 방법론을 제시했다거나 한 연구는 아니었지만, 그 뛰어난 인력과 자본력을 동원해 일반적으로 확인하기 어려운 영역을 탐구하고, 놀랄만한 결과를 냈다는 점에서 역시 OpenAI다 하며 읽었다. 다만 읽는 내내 이들이 conclusion에서 말했듯 모델에 목표를 설정할 수 있다면 좋을텐데라는 생각을 했는데, 향후 연구에서 어떻게 목표를 설정할지, 그리고 설정했을 시 어느정도 정확도로 이를 달성할 수 있을지 등 향방이 기다려지는 논문이었다.
 
 참고로 이 연구에 쓰인 모델 weight 등은 공개되어 있으니 관심있는 독자는 [VPT GitHub](https://github.com/openai/Video-Pre-Training)를 참고 바란다.
 
