@@ -28,6 +28,11 @@ menu:
           url: tags
           weight: 10
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 params:
     env: production
     title: "What Did I Say?"
