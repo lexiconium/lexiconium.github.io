@@ -6,7 +6,18 @@
     <description>Recent content in Posts on What Did I Say?</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 06 Jul 2022 18:01:45 +0900</lastBuildDate><atom:link href="https://lexiconium.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Jul 2023 17:10:12 +0900</lastBuildDate><atom:link href="https://lexiconium.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Retentive Network: A Successor to Transformer for Large Language Models 리뷰</title>
+      <link>https://lexiconium.github.io/posts/retentive_network/</link>
+      <pubDate>Wed, 19 Jul 2023 17:10:12 +0900</pubDate>
+      
+      <guid>https://lexiconium.github.io/posts/retentive_network/</guid>
+      <description>트랜스포머 아키텍쳐가 2017년에 등장한 이후 다양한 영역에서 그 유용성을 입증했고 따라서 현대 딥러닝 아키텍쳐의 표준으로 자리매김 했다 해도 과언이 아닐 것이라 생각합니다. 다만 그런 트랜스포머 아키텍쳐 (혹은 어텐션 메커니즘)에도 단점은 있으니, 바로 높은 코스트입니다. 특히 트랜스포머의 parallelism은 학습시엔 유용하지만 이를 추론 때 역시 강제하여 시퀀스 길이에 quadratic한 자원을 요구하게 합니다.
+Fig. 1. &amp;ldquo;Impossible triangle&amp;rdquo;. RetNet(Retentive Network)은 불가능을 가능케 합니다. [1]
+이를 극복하기 위해 연구진은 두 가지 표현 방식(recurrent, parallel)을 취할 수 있는 retention mechanism을 제안합니다.</description>
+    </item>
+    
     <item>
       <title>OpenAI의 Video PreTraining (VPT) 리뷰</title>
       <link>https://lexiconium.github.io/posts/openai_vpt/</link>
